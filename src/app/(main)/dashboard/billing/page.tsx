@@ -77,7 +77,7 @@ const BillingPage = async () => {
     const subscriptionUrl = await getStripeSession({
       customerId: dbUser?.stripeCustomerId as string,
       priceId: process.env.STRIPE_PRICE_ID!,
-      domainUrl: `http://localhost:3000`,
+      domainUrl: `https://marvel-sass.vercel.app`,
     });
 
     return redirect(subscriptionUrl);
@@ -87,7 +87,7 @@ const BillingPage = async () => {
     "use server";
     const session = await stripe.billingPortal.sessions.create({
       customer: data?.user.stripeCustomerId as string,
-      return_url: "http://localhost:3000/dashboard",
+      return_url: "https://marvel-sass.vercel.app/dashboard",
     });
 
     return redirect(session.url);
