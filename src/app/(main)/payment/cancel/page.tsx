@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const StripeCancelPage = () => {
   return (
-    <div className="w-full min-h-[80vh] flex items-center justify-center">
+    <div className="w-full min-h-[80vh] flex items-center justify-center px-4">
       <Card className="w-[350px]">
         <div className="p-6">
           <div className="flex items-center justify-center">

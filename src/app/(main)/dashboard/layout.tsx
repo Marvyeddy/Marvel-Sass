@@ -69,7 +69,7 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
   });
 
   return (
-    <div className="flex flex-col space-y-6 mt-10">
+    <div className="flex flex-col space-y-6 mt-10 px-4 md:px-6">
       <div className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr] mx-auto">
         <aside className="hidden w-[200px] flex-col md:flex">
           <DashboardNav />
